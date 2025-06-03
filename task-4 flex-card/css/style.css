@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+}
+
+.card{
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* header-style */
+.card-header{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.card-header ul li a{
+    font-size: 12px;
+    margin: 5px;
+    color: #000000;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.card-header ul li a:hover{
+    color: #0099ff;
+}
+
+
+/* image-style */
+.card-image{
+    width: 100%;
+    position: relative;
+}
+.card-image img{
+    width: 100%;
+    display: block;
+}
+
+.card-image .overlay{
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.432);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: end;
+    transition: opacity 0.5s ease;
+}
+
+.card-image:hover .overlay{
+    opacity: 1;
+}
+
+.card-image .overlay h3{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: 10%;
+}
+
+.card-image .author-image{
+    position: absolute;
+    display: block;
+    bottom: -25px;
+    right: 10px;
+    width: 30%;
+    border-radius: 50%;
+    border: #ffffff solid 6px;    
+}
+
+/* content-style */
+.card-content{
+    width: 100%;
+    padding: 10px;
+}
+.card-content h2{
+    font-size: 15px;
+    color:#0099ff;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.card-content h2:after{
+    content: '';
+    position: absolute;
+    border-bottom: #000000 solid 3.5px;
+    left: 0;
+    bottom: -15px;
+    margin: 5px 0px;
+    width: 25px;
+}
+
+.card-content p{
+    font-size: 13px;
+    color: #676767;
+    line-height: 1.7;
+    margin: 15px 0
+}
