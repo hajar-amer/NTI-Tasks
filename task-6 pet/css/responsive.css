@@ -1,0 +1,220 @@
+/* Media Queries */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991.98px) {
+    .hero-section {
+        min-height: 70vh;
+    }
+
+    .hero-section .btn {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .services-section .col-md-6 {
+        height: auto;
+    }
+
+    .services-section .d-lg-none {
+        display: block;
+    }
+
+    .services-section .d-lg-block {
+        display: none;
+    }
+
+    .about-us-section .col-lg-7,
+    .about-us-section .col-lg-5 {
+        text-align: center;
+    }
+
+    .about-us-section .about-img {
+        visibility: hidden;
+        display: none;
+    }
+
+    .blog-section .blog-img{
+        visibility: hidden;
+        display: none;
+    }
+
+    .footer-section .col-lg-3,
+    .footer-section .col-lg-2,
+    .footer-section .col-lg-1 {
+        margin-bottom: 2rem;
+    }
+
+    .footer-section .col-lg-2:last-of-type,
+    .footer-section .col-lg-1:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .footer-section .col-md-3,
+    .footer-section .col-sm-6 {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-section .col-md-12 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) and down to iPhone 13/14 portrait */
+@media (max-width: 767.98px) {
+    .hero-section .container {
+        padding-top: 3rem;
+    }
+
+    .hero-section .row {
+        margin-top: 0;
+    }
+
+    .hero-section .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .shop-section .container .row {
+        margin-top: 0;
+    }
+
+
+
+    .shop-section .col-md-6:last-child {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .shop-section .d-flex.flex-wrap {
+        justify-content: center;
+    }
+
+    .shop-section .row.row-cols-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-section .row.row-cols-1 .col {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .shop-section .d-flex.justify-content-end {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+    .services-section .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
+    .team-img {
+        height: 200px;
+    }
+
+    .team-card {
+        text-align: left;
+    }
+
+    .team-card .d-flex.justify-content-center {
+        justify-content: flex-start;
+    }
+
+    .our-team-section .row.row-cols-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-team-section .row.row-cols-1 .col {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blog-section .row .col-lg-6 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+
+    .blog-section .blog-img{
+        visibility: hidden;
+        display: none;
+    }
+
+    .contact-form-card {
+        padding: 1.5rem;
+    }
+
+    .contact-section .row .col-lg-6 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+
+    }
+
+    .footer-section .navbar-brand,
+    .footer-section .footer-description {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .footer-section .d-grid {
+        justify-content: center;
+    }
+
+    .footer-section .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .footer-section .newsletter-input,
+    .footer-section .newsletter-btn {
+        width: 100%;
+    }
+
+    .footer-section .newsletter-input {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+
+
+    .footer-section .footer-links {
+        padding-left: 0;
+    }
+
+    .footer-section .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-section .social-icons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-section .d-flex.flex-column.flex-md-row {
+        text-align: center;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero-section .display-3 {
+        font-size: 2rem;
+    }
+
+    .about-us-section .about-img {
+        visibility: hidden;
+        display: none;
+    }
+
+    .blog-section .blog-img{
+        visibility: hidden;
+        display: none;
+    }
+}
